@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     color: "gray",
   },
   time: {
-    fontSize: 14,
+    fontSize: 12,
     color: "gray",
   },
   leftContainer: {

@@ -83,19 +83,19 @@ function TabBarIcon(props: {
 
 // Each tab has its own navigation stack, you can read more about this pattern here:
 // https://reactnavigation.org/docs/tab-based-navigation#a-stack-navigator-for-each-tab
-const TabOneStack = createStackNavigator<ChatsParamList>();
+const ChatsStack = createStackNavigator<ChatsParamList>();
 
 function TabOneNavigator() {
   return (
-    <TabOneStack.Navigator>
-      <TabOneStack.Screen
+    <ChatsStack.Navigator>
+      <ChatsStack.Screen
         name="ChatsScreen"
         component={ChatsScreen}
         options={{
-          headerTitle: () => null,
+          headerShown: false,
         }}
       />
-    </TabOneStack.Navigator>
+    </ChatsStack.Navigator>
   );
 }
 
