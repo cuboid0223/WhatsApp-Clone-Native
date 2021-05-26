@@ -5,7 +5,9 @@
 
 export type RootStackParamList = {
   Root: undefined;
+  ChatRoom: undefined;
   NotFound: undefined;
+  
 };
 
 // 預防 typo 錯誤
