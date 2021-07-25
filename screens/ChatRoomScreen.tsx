@@ -1,10 +1,10 @@
 import React from "react";
 import { View, Text, FlatList, ImageBackground } from "react-native";
-//import styles from "./styles";
 import { useRoute } from "@react-navigation/native";
 import chatRoomData from "../data/Chats";
 import ChatMessage from "../components/ChatMessage";
 import BG from "../assets/images/BG.png";
+import InputBox from "../components/InputBox";
 
 const ChatRoomScreen = () => {
   // to get chatRoom id
@@ -19,7 +19,7 @@ const ChatRoomScreen = () => {
         inverted // 反轉
       />
 
-      
+      <InputBox />
     </ImageBackground>
   );
 };

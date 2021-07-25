@@ -31,6 +31,7 @@ import {
 import ChatRoomScreen from "../screens/ChatRoomScreen";
 import moment from "moment";
 import { StatusBar } from "expo-status-bar";
+import ContactsScreen from "../screens/ContactsScreen";
 
 export default function Navigation({
   colorScheme,
@@ -67,6 +68,7 @@ function RootNavigator() {
         },
       }}
     >
+      {/* 放大鏡 與 三個點點 */}
       <Stack.Screen
         name="Root"
         component={BottomTabNavigator}
@@ -92,7 +94,7 @@ function RootNavigator() {
           ),
         }}
       />
-
+      {/* 點進聊天室(ChatRoom)後，顯示使用者頭像與名稱... */}
       <Stack.Screen
         name="ChatRoom"
         component={ChatRoomScreen}
@@ -167,7 +169,9 @@ function RootNavigator() {
           ),
         })}
       />
-
+      {/* Contacts 頁面 */}
+      <Stack.Screen name="Contacts" component={ContactsScreen} />
+      {/* Not Found 頁面 */}
       <Stack.Screen
         name="NotFound"
         component={NotFoundScreen}
